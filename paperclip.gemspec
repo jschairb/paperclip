@@ -8,8 +8,8 @@ exclude_files = ["test/s3.yml", "test/debug.log", "test/paperclip.db", "test/doc
   Dir[glob]
 end.flatten
 
-spec = Gem::Specification.new do |s| 
-  s.name              = "paperclip"
+spec = Gem::Specification.new do |s|
+  s.name              = "jschairb-paperclip"
   s.version           = Paperclip::VERSION
   s.author            = "Jon Yurek"
   s.email             = "jyurek@thoughtbot.com"
@@ -20,7 +20,7 @@ spec = Gem::Specification.new do |s|
   s.files             = include_files - exclude_files
   s.require_path      = "lib"
   s.test_files        = Dir["test/**/test_*.rb"]
-  s.rubyforge_project = "paperclip"
+  s.rubyforge_project = "jschairb-paperclip"
   s.has_rdoc          = true
   s.extra_rdoc_files  = Dir["README*"]
   s.rdoc_options << '--line-numbers' << '--inline-source'
